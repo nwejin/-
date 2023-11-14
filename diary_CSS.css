@@ -1,0 +1,147 @@
+* {
+  color: #333;
+}
+
+body {
+  background-color: lightblue;
+}
+
+.month {
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  text-align: center;
+  width: 1000px;
+  height: 100px;
+  /* justify-content: space-around; */
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  display: flex;
+  width: 1000px;
+  height: 700px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.container {
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  margin: auto;
+  overflow: auto;
+  /* display: flex; */
+  margin-top: 70px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.arco {
+  width: 100%;
+}
+
+.collapsible {
+  background-color: whitesmoke;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #ccc;
+}
+
+.content {
+  overflow: hidden;
+  background-color: white;
+  border: none;
+  width: 100%;
+  display: none;
+  height: 70px;
+  resize: none;
+  /* padding: none; */
+  /* 기본값이 none */
+  /* max-height: 0; */
+  /* transition: max-height 0.2s ease-out; */
+}
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.save {
+  position: absolute;
+  margin-left: 850px;
+  padding: 10px;
+  border: none;
+  box-shadow: 3px 3px 3px gray;
+  background-color: #f7bac2;
+  /* border: 1px solid; */
+  border-radius: 5px;
+  cursor: pointer;
+  /* position: absolute; */
+  width: 80px;
+  height: 35px;
+  font-weight: bold;
+}
+
+.add {
+  position: absolute;
+  /* display: inline-block; */
+  /* margin-bottom: 10px; */
+  margin-left: 790px;
+  padding: 10px;
+  background-color: #caceeb;
+  /* border: 1px solid; */
+  border-radius: 100%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.beforeWeek {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+  padding: none;
+  content: "\23E9";
+}
+
+.beforeWeek:hover {
+  opacity: 0.8;
+}
+
+.afterWeek {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 32px;
+}
+.afterWeek:hover {
+  opacity: 0.8;
+}
+#yearMonth {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  width: 15 0px;
+}
